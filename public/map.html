@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="crossorigin=""
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin="">
+    </script>
+    <script src="src/leaflet.motion.min.js"></script>
+    <script src="src/leaflet.browser.print.min.js"></script>
+    <script src="src/leaflet-color-markers.js"></script>
+    <style>
+      #mapid {
+        height: 800px;
+        margin: 8px 0px;
+      }
+
+      #refreshButton {
+        position: absolute;
+        top: 30px;
+        right: 80px;
+        padding: 10px;
+        z-index: 400;
+      }
+
+      #refreshButton:hover{
+          opacity: 0.8;
+          cursor: pointer;
+      }
+    </style>
+    <title>Your Map data</title>
+  </head>
+  <body> 
+    <div id="mapid"></div>
+    <button onclick= "window.location.reload();"  id="refreshButton">Refresh Page if nothing appears</button>
+    <script src="map.js"></script>
+    <script>
+    /*window.setInterval('refresh()', 12000);   // Call a function every 7 seconds.
+
+    // Refresh or reload page.
+    function refresh() {
+        window .location.reload();
+    }*/
+  </script>
+  </body>
+</html>
