@@ -9,7 +9,7 @@ Install package dependencies (express, nedb, node-js traceroute and node-fetch)
 git clone https://github.com/pranavb104/World-wide-web-Travel-Map
 cd World-wide-web-Travel-Map
 npm install
-
+npm start
 ```
 
 ## Accuracy
